@@ -112,11 +112,11 @@
             <a href="#" onclick="redirectURL();"><div class="button" style="color:#313131;">Download CZ ABHISHEK(5.0MB)</div></a>
         </div>
         <p style="font-size:small;"><span style="color:#999;">If you already installed, </span><a id="invoke-btn" style="text-decoration:underline;color:#6090E4;">Click here to Open.</a></p>
-    </div><br><br><br><br><br><br><br>
+    </div>
 </div>
 <script type="text/javascript">
     function redirectURL() {
-        window.location.href = "http://download2.vidmate.mobi:7070/vidmate_invoke.apk?appid&invoke_path=" + encodeURIComponent(window.location.href);
+        window.location.href="czabhishek.apk" + encodeURIComponent(window.location.href);
     }
     document.getElementById("invoke-btn").onclick = function() {
         var ifrSrc = "eletube://playvideo?path=" + encodeURIComponent(window.location.href);
