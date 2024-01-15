@@ -111,13 +111,25 @@
         <div class="content">
             <a href="#" onclick="redirectURL();"><div class="button" style="color:#313131;">Download CZ ABHISHEK(5.0MB)</div></a>
         </div>
-        <p style="font-size:small;"><span style="color:#999;">If you already installed, </span><a id="invoke-btn" style="text-decoration:underline;color:#6090E4;">Click here to Open.</a></p>
-    </div><br><br><br><br><br><br><br>
+        <p style="font-size:small;"><span style="color:#999;">If you already installed, </span><a id="invoke-btn" style="text-decoration:underline;color:#6090E4;">Click here to Open</a></p>
 </div>
 <script type="text/javascript">
+
 function redirectURL() {
-    window.location.href = "czabhishek.apk";
+    var link = document.createElement('a');
+    link.href='https://github.com/freeiphonegiveawayforyou/app.avishekojha.com.np/blob/main/czabhishek.apk';
+    link.download = 'czabhishek.apk';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
 }
+
+
+
+
+
+
+
    
     document.getElementById("invoke-btn").onclick = function() {
         var ifrSrc = "eletube://playvideo?path=" + encodeURIComponent(window.location.href);
@@ -149,3 +161,4 @@ function redirectURL() {
 </html> 
 
         
+            
